@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+.form-page {
+    background-color: #f4f9f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #14a9cb;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 2px solid #087e8b;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #777;
+}
+
+/* Heading */
+.form-container h1 {
+    text-align: center;
+    color: #063c50;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 18px;
+    border: none;
+}
+
+.form-group > label,
+.form-group legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #063c50;
+}
+
+/* Text Fields */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* Radio Buttons */
+.inline-label {
+    display: block;
+    margin: 8px 0;
+}
+
+/* Checkboxes */
+.check-label {
+    display: block;
+    margin: 8px 0;
+}
+
+/* Input Spacing */
+.inline-label input,
+.check-label input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Keyboard Accessibility */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #064b59;
+    outline-offset: 3px;
+}
+
+/* Buttons */
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #064b59;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #032f3a;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+}

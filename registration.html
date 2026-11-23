@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body class="form-page">
+
+    <main class="form-container">
+
+        <h1>Student Activity Registration</h1>
+
+        <form action="#" method="post">
+
+            <!-- Text Fields -->
+            <div class="form-group">
+                <label for="name">Enter Your Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentid">Enter Your ID:</label>
+                <input type="text" id="studentid" name="studentid"
+                       placeholder="Enter student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Enter Your Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Enter Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter phone number"
+                       pattern="[0-9]{10}" required>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="form-group">
+                <label for="year">Year of Studying:</label>
+
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department:</label>
+
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="CSE">CSE</option>
+                    <option value="AIML">CSE AIML</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MECH">Mechanical</option>
+                    <option value="CIVIL">Civil</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons -->
+            <fieldset class="form-group">
+                <legend>Select Gender:</legend>
+
+                <label class="inline-label">
+                    <input type="radio" name="gender"
+                           value="Male" required>
+                    Male
+                </label>
+
+                <label class="inline-label">
+                    <input type="radio" name="gender"
+                           value="Female">
+                    Female
+                </label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset class="form-group">
+                <legend>Select Events:</legend>
+
+                <label class="check-label">
+                    <input type="checkbox" name="events"
+                           value="Coding Competition">
+                    Coding Competition
+                </label>
+
+                <label class="check-label">
+                    <input type="checkbox" name="events"
+                           value="Web Development Workshop">
+                    Web Development Workshop
+                </label>
+
+                <label class="check-label">
+                    <input type="checkbox" name="events"
+                           value="Cultural Fest">
+                    Cultural Fest
+                </label>
+
+                <label class="check-label">
+                    <input type="checkbox" name="events"
+                           value="Sports Competition">
+                    Sports Competition
+                </label>
+
+                <label class="check-label">
+                    <input type="checkbox" name="events"
+                           value="Technical Quiz">
+                    Technical Quiz
+                </label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+
+                <textarea id="message" name="message"
+                          rows="4"
+                          placeholder="Enter your message">
+                </textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button type="submit">Register Now</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
